@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.layabox.layaboxbrowser" >
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <meta-data android:name="xwalk_apk_url" android:value="http://10.10.20.102:7777/XWalkRuntimeLib.apk" />
+        <meta-data android:name="xwalk_enable_download_mode" android:value="enable" />
+        <meta-data android:name="xwalk_verify" android:value="disable" />
+        <activity android:name=".MainActivity"
+                  android:screenOrientation="landscape"
+                  android:theme="@style/Theme"
+                  android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation">
+        </activity>
+        <activity
+            android:name=".XWalkDownloadActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="demo.LayaPluginActivity"
+            android:screenOrientation="landscape"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:process=":game"
+            >
+            <intent-filter>
+                <action android:name="demo.LayaPluginActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.odin.framework.proxy.ProxyActivity"
+            android:configChanges="orientation|navigation|screenSize|keyboardHidden|keyboard"
+            android:exported="false"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="adjustPan">
+        </activity>
+
+        <service
+            android:name="com.odin.framework.proxy.ProxyService1"
+            android:exported="false"/>
+        <service
+            android:name="com.odin.framework.proxy.ProxyService2"
+            android:exported="false"/>
+        <service
+            android:name="com.odin.framework.proxy.ProxyService3"
+            android:exported="false"/>
+        <service
+            android:name="com.odin.framework.proxy.ProxyService4"
+            android:exported="false"/>
+        <service
+            android:name="com.odin.framework.proxy.ProxyService5"
+            android:exported="false"/>
+        <meta-data android:name="LT_APP_ID"
+            android:value="shkgxqdld"/>
+        <meta-data android:name="LT_APP_KEY"
+            android:value="shkgjf"/>
+        <provider
+            android:authorities="com.layabox.provider.BrowserProvider"
+            android:name="com.layabox.provider.BrowserProvider" />
+
+        <provider
+            android:process=":game"
+            android:authorities="com.layabox.provider.GameProvider"
+            android:name="com.layabox.provider.GameProvider" /><!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+        <!--<meta-data-->
+            <!--android:name="com.google.android.gms.version"-->
+            <!--android:value="@integer/google_play_services_version" />-->
+    </application>
+
+</manifest>

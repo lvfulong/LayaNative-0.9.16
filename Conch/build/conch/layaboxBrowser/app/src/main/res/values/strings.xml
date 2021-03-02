@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">layaboxBrowser</string>
+    <string name="BroswerProvider">com.layabox.BroswerProvider</string>
+    <string name="GameProvider">com.layabox.GameProvider</string>
+    <string name="laya_ZaiAnTuiChu">再次点击后退键退出游戏!</string>
+</resources>

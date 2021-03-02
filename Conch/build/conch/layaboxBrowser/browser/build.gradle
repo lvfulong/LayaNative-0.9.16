@@ -1,0 +1,48 @@
+apply plugin: 'com.android.library'
+android {
+    compileSdkVersion 24
+    buildToolsVersion "24.0.2"
+
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 24
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        externalNativeBuild {
+            ndk {
+                abiFilter "armeabi-v7a"
+                //cFlags "-std=c++11 -fexceptions"
+                //ldLibs "log","GLESv2" ,"z","android"
+                // stl "stlport_shared"
+            }
+        }
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    externalNativeBuild {
+//        cmake{
+//            path "CMakeLists.txt"
+//        }
+        ndkBuild {
+              path '../../../common/proj.android.laya8/jni/Android.mk'
+            // path file("D:\\LayaBox\\Conch5\\gitConch5\\Conch\\build\\conch\\Test2\\app\\src\\main\\jni\\Android.mk")
+        }
+
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+//    compile 'com.android.support:appcompat-v7:24.2.1'
+    //compile project(':xwalk_core_library')
+    compile project(':xwalk_shared_library')
+    compile project(':unicom_sdk')
+}

@@ -1,0 +1,4 @@
+include ':app', ':browser'
+include 'unicom_sdk'
+include 'sdk_interface'
+include ':xwalk_shared_library'

@@ -1,0 +1,32 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "89833343-0185-407b-b536-d375878c54a6++8285",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "89833343-0185-407b-b536-d375878c54a6++8285" : {
+      "DVTSourceControlWorkingCopyRepositoryPrimaryBranchLocationKey" : "Trunk"
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "52D964A246821B09E37D4CDD9645EE2065EEE3A4" : 0,
+    "89833343-0185-407b-b536-d375878c54a6++8285" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "CE77D219-ACDA-4F89-8B05-6A17CCCAE8D1",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "52D964A246821B09E37D4CDD9645EE2065EEE3A4" : "Trunk\/ThirdParty\/msgpack-c\/",
+    "89833343-0185-407b-b536-d375878c54a6++8285" : "Trunk\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "common",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Conch\/build\/common\/proj.ios\/common.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/msgpack\/msgpack-c.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "52D964A246821B09E37D4CDD9645EE2065EEE3A4"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/192.168.0.166\/svn\/conch5",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "89833343-0185-407b-b536-d375878c54a6++8285"
+    }
+  ]
+}

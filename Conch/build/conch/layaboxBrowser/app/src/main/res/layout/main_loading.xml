@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+	<!--<LinearLayout-->
+	    <!--android:layout_weight="1"-->
+	    <!--android:layout_width="match_parent"-->
+	    <!--android:layout_height="match_parent"-->
+	    <!--android:orientation="vertical"-->
+	    <!--android:gravity="center"-->
+   		<!--&gt;-->
+    <!--<ImageView-->
+        <!--android:id="@+id/loading_image"-->
+		<!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+		<!--android:scaleType="fitXY"-->
+		<!--android:background="@drawable/splash_landscape">-->
+	<!--</ImageView>-->
+	<!--</LinearLayout>-->
+
+	<!--<LinearLayout-->
+        <!--android:layout_weight="2.5"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:orientation="vertical">-->
+
+    <!--<ProgressBar-->
+        <!--android:id="@+id/pluginLoadingProgressBar"-->
+        <!--style="?android:attr/progressBarStyleHorizontal"-->
+        <!--android:layout_gravity="center" -->
+        <!--android:layout_width="260dp"-->
+        <!--android:layout_height="10dp"-->
+        <!---->
+        <!--android:progressDrawable="@drawable/progressbg" />-->
+
+	<FrameLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+		<ImageView
+			android:id="@+id/loading_image"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:scaleType="fitXY"
+			android:background="@drawable/splash_landscape">
+		</ImageView>
+		<TextView
+			android:id="@+id/pluginLoadingText"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@color/blue"
+			android:layout_gravity="center"
+			android:layout_marginTop="50dp"
+			android:text="loading" />
+
+	</FrameLayout>
+	<!--</LinearLayout>-->
+</LinearLayout>

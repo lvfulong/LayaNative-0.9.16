@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">LayaBox</string>
+    <string name="action_settings">Settings</string>
+    <string name="laya_ZaiAnTuiChu">再次点击后退键退出游戏!</string>
+    <string name="exit">退出</string>
+    <string name="refresh">刷新</string>
+    <string name="deskTop">桌面</string>
+</resources>

@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "89833343-0185-407b-b536-d375878c54a6++6425",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "89833343-0185-407b-b536-d375878c54a6++6425" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "89833343-0185-407b-b536-d375878c54a6++6425" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "8B159F93-4658-4292-80E8-1397D4B5C572",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "89833343-0185-407b-b536-d375878c54a6++6425" : "Trunk\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "conchRuntime",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Conch\/build\/conchRuntime\/proj.ios\/conchRuntime.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/192.168.0.166\/svn\/conch5",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "89833343-0185-407b-b536-d375878c54a6++6425"
+    }
+  ]
+}
